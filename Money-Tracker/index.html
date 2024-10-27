@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracker</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper purple darken-1">
+            <div class="container">
+                <a href="#" class="brand-logo center">Money Tracker</a>
+                <ul class="right">
+                    <li><a href="#" class="clear-btn btn black">Clear </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">Add Task and Money</div>
+                <form>
+                    <div class="row">
+                        <div class="input-filed col s6">
+                            <input type="text" placeholder="Add Item" id="item-name">
+                        </div>
+                        <div class="input-filed col s6">
+                            <input type="text" placeholder="Add Money" id="item-money">
+                        </div>
+
+                    </div>
+
+                    <button class="add-btn btn green accent-4"><i class="fa-solid fa-plus"></i>Add Task</button>
+                    <button class="Update btn  amber darken-4"><i class="fa-solid fa-pencil"></i>Update Task</button>
+                    <button class="delete-btn btn deep-orange accent-4"><i class="fa-solid fa-trash"></i>Delete Task</button>
+                    <button class="back-btn btn black"><i class="fa-solid fa-arrow-left"></i>Back</button>
+                </form>
+            </div>
+        </div>
+        <h5 class="center-align">Total Money :
+            <span class="total-money">0</span></h5>
+            <ul id="item-list " class="collection">
+        <li class="collection-item" id="item-1"><strong>Bike : <em>3000</em></strong>
+                <a href="#" class="secondary-content">
+                    <i class="fa-solid fa-pencil edit-item"></i>
+                </a>
+            </li>
+            </ul>
+        
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
